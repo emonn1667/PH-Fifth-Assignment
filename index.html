@@ -128,13 +128,14 @@
 
     <!-- three box panel end -->
 
-   <div class="offer flex justify-center items-center mb-[50px]">
+    <div class="offer flex justify-center items-center mb-[40px]">
       <p class="font-[raleway] text-[40px] font-bold">Best offers for you</p>
     </div>
 
-    
-    <div class="flex flex-col w-[1100px] h-[500px] mx-auto lg:flex-row">
-      <div class="grid flex-grow w-[130px] h-[220px] card bg-base-300 rounded-box place-items-center" style="background-image: url(./image/Group\ 115.png);">
+
+    <div class="flex flex-col w-[1100px] h-[250px] mx-auto lg:flex-row">
+      <div class="grid flex-grow w-[130px] h-[220px] card bg-base-300 rounded-box place-items-center"
+        style="background-image: url(./image/Group\ 115.png);">
         <div class="coupontext text-left relative right-[130px] top-[45px] ">
           <p class="text-[36px] font-bold font-[inter]">15% OFF</p>
           <p class="text-[16px] font-bold font-[inter]">on your next purchase</p>
@@ -145,11 +146,12 @@
           <p class="text-[26px] font-bold font-[raleway]">NEW15</p>
           <p class="text-[15px] font-thin font-[raleway] text-black">Coupon Code</p>
         </div>
-      </div> 
+      </div>
 
-      <div class="divider gap-5"></div> 
+      <div class="divider gap-5"></div>
 
-      <div class="grid flex-grow w-[130px] h-[220px] card bg-base-300 rounded-box place-items-center" style="background-image: url(./image/Frame\ 5.png);">
+      <div class="grid flex-grow w-[130px] h-[220px] card bg-base-300 rounded-box place-items-center"
+        style="background-image: url(./image/Frame\ 5.png);">
         <div class="coupontext text-left relative right-[130px] top-[45px] ">
           <p class="text-[36px] font-bold font-[inter]">20% OFF</p>
           <p class="text-[16px] font-bold font-[inter]">on your next purchase</p>
@@ -163,7 +165,143 @@
 
       </div>
     </div>
-   
+
+    <div class="offer flex justify-center items-center mt-4">
+      <button
+        class=" w-[180px] h-[65px] font-[raleway] box-border border-[1px] font-bold text-[#1dd100] border-[#1dd100] rounded-[14px] border-[12px] mb-[120px]">See
+        All Offers</button>
+    </div>
+
+
+    <div class="card w-[1280px] h-[600px] mx-auto bg-base-100 bg-slate-100">
+      <div class="card-body mx-auto w-[1050px] h-[4 95px] flex flex-col justify-center items-center ">
+        <h2 class="font-[raleway] text-[40px] font-bold">P.H Paribahan</h2>
+        <p class="font-[inter] text-[18px] font-normal w-[736px] h-[60px] text-center">Yes, you can run unit tests and
+          view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+      </div>
+      <div class="w-[920px] h-[418px] mx-auto bg-white rounded-3xl">
+
+        <div class="w-[880px] h-[72px] mx-auto flex flex-row justify-between pt-[30px]">
+          <img class=" w-[68px] h-[48px] mt-3" src="./image/Vector.png" alt="Shoes" />
+          
+        <div class="flex flex-col mr-[340px] w-[312px] h-[80px] pl-[10px]">
+          <p class="w-[312px] h-[42px] font-[raleway] text-[32px] font-bold">Greenline Paribahan</p>
+          <p class="">Coach-009-WEB ! AC_Business</p>
+          
+        </div>
+        <div class="w-[150px] h-[54px] rounded-xl bg-blue-200 flex justify-center items-center mt-[10px] relative right-[210px] ">
+          <img class="w-[31px] h-[31px]" src="./image/tabler-icon-armchair.png" alt="">
+          <span class="">40 Seats Left</span>
+        </div>
+        </div>
+
+        <div class=" w-[800px] h-[258px] ml-[20px] mt-[40px] ">
+          <label class=" input-bordered flex items-center">
+            <input type="text" class="grow" placeholder="Route" />
+            <span class="badge mr-[130px]">Dhaka-Sylhet</span>
+          </label>
+
+          <label class=" input-bordered flex items-center">
+            <input type="text" class="grow" placeholder="Departure Time" />
+            <span class="badge mr-[130px]">9:00 PM</span>
+          </label>
+
+          <div class="flex flex-row justify-between mt-[20px]">
+            <button class="btn btn-wide">Boarding Point - Laxmipur</button>
+            <button class="btn btn-wide">Dropping Point - Bogura</button>
+            <button class="btn btn-wide">Est. Time - 11 Hour</button>
+          </div>
+
+        </div>
+        
+
+      </div>
+    </div>
+
+    <div class="w-[1170px] h-[1050px] bg-purple-300 mx-auto">
+      <div>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Ticket Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .bus-seats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      max-width: 400px;
+      margin: 20px auto;
+    }
+
+    .seat {
+      width: 50px;
+      height: 50px;
+      background-color: #ccc;
+      border: 1px solid #999;
+      text-align: center;
+      line-height: 50px;
+      cursor: pointer;
+    }
+
+    .seat.selected {
+      background-color: green;
+      color: white;
+    }
+
+    #counter {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="bus-seats  " id="busSeats">
+  <p>Select Your Seat</p>
+  
+  <div class="seat" onclick="toggleSeat(this)">A1</div>
+  <div class="seat" onclick="toggleSeat(this)">A2</div>
+  <div class="seat" onclick="toggleSeat(this)">A3</div>
+  <div class="seat" onclick="toggleSeat(this)">A4</div>
+  <div class="seat" onclick="toggleSeat(this)">A5</div>
+  <div class="seat" onclick="toggleSeat(this)">A6</div>
+  <div class="seat" onclick="toggleSeat(this)">A7</div>
+  <div class="seat" onclick="toggleSeat(thi s)">A8</div>
+  <!-- Repeat for the remaining seats -->
+</div>
+
+<div id="counter">Remaining Seats: <span id="remainingCounter">40</span></div>
+
+<script>
+  let remainingSeats = 40;
+
+  function toggleSeat(seat) {
+    if (!seat.classList.contains('selected') && remainingSeats > 0) {
+      seat.classList.add('selected');
+      remainingSeats--;
+    } else if (seat.classList.contains('selected')) {
+      seat.classList.remove('selected');
+      remainingSeats++;
+    }
+
+    // Update remaining seat counter
+    document.getElementById('remainingCounter').innerText = remainingSeats;
+  }
+</script>
+
+
+      </div>
+      <div>
+
+      </div>
+    </div>
 
 
 
